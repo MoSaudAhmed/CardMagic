@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_video_adapter"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="match_parent"
+    tools:context="com.mgdapps.cardmagic.Custom_videopager">
+
+   <ImageView
+       android:id="@+id/img_videoadap"
+       android:layout_width="wrap_content"
+       android:layout_height="200dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="5dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_videoadap">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_videoadap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="HEllo World"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:id="@+id/btn_videoadap"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn"
+            android:text="Video"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginBottom="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_videoadap"
+            android:onClick="videobtnclicked"
+            />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

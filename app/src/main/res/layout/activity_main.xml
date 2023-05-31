@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:background="@drawable/magic_bg"
+    android:layout_height="match_parent"
+    tools:context="com.mgdapps.cardmagic.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.6"/>
+    <Button
+        android:id="@+id/btn_catagory"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:text="Catagory"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:onClick="catagoryclicked"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_music_on"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:text="Music ON "
+        android:layout_below="@id/btn_catagory"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:onClick="musicONclick"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btn_music_off"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:text="Music OFF"
+        android:layout_below="@id/btn_catagory"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:onClick="musicOFFclick"
+        android:layout_centerInParent="true"/>
+
+
+    <Button
+        android:id="@+id/btn_remove_adds"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:text="Remove adds"
+        android:layout_below="@id/btn_music_on"
+        android:textColor="#FFF"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:onClick="removeaddclicked"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:text="Exit"
+        android:layout_below="@id/btn_remove_adds"
+        android:textColor="#FFF"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:onClick="exitclicked"
+        android:layout_centerInParent="true"/>
+
+
+
+
+</RelativeLayout>
